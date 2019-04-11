@@ -4,20 +4,25 @@ body{
     grid-template-areas: 'navbar navbar navbar navbar'
                          'section section aside aside'
                          'footer footer footer footer';
-    grid-template-rows: 15vh 60vh 30vh;
+    grid-template-rows: 15vh 65vh 20vh;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.7vw;
 }
 nav{
     grid-area: navbar;
-    background-color: darkolivegreen;
+    background-color: #cc1f8a;
     /* height: 40px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 nav a{
-    color: white;
+    color: limegreen;
     text-decoration: none;
     font-size: 16pt;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(12, 118, 204);
 }
 
 #menuHamburguer{
@@ -71,7 +76,20 @@ nav a{
 
 section{
     grid-area: section;
-    background-color: orange;
+    background-color: rgb(0, 255, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section img{
+    border-radius: 100%;
+    z-index: 1000;
+}
+section h1{
+    color: white;
+    font-family: 'Dokdo', cursive;
+    font-size: 26pt;
 }
 aside{
     grid-area: aside;
@@ -79,5 +97,24 @@ aside{
 }
 footer{
     grid-area: footer;
-    background-color: red;
+    background-color: rgb(166, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+footer div{
+    display: flex;
+}
+footer a {
+    text-decoration: none;
+    font-size: 16pt;
+}
+.nicolas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 5px; */
+}
+
